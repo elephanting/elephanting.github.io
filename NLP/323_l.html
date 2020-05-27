@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+	<script src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js' type='text/javascript'></script>
+</head>
+<body>
+	<form id="mturk_form" method="post" name="mturk_form">
+		<input type="hidden" id="assignmentId" value="" name="assignmentId"/>
+
+		<h1>Please select the scores you feel after you see the sentence</h1>
+        <table width='800' border='1' style="font-size: 120%">
+            <tr style="font-size: 150%"><td>Scale</td><td>Valence Rating</td><td>Arousal rating</td><td>Dominance Rating</td></tr>
+            <tr><td>1</td><td>Pleasant</td><td>Excited</td><td>Dependent</td></tr>
+            <tr><td>2</td><td>Pleased</td><td>Wide-awake</td><td>Powerlessness</td></tr>
+            <tr><td>3</td><td>Neutral</td><td>Neutral</td><td>Neutral</td></tr>
+            <tr><td>4</td><td>Unsatisfied</td><td>Dull</td><td>Powerful</td></tr>
+            <tr><td>5</td><td>Unpleasant</td><td>Calm</td><td>Independent</td></tr>
+        </table>
+        <p></p>
+		<fieldset style="font-size: 150%">
+            <h3>Scotland has been under Westminster rule for 313 years but the Scottish people didn't consent to it and we've never stopped resisting it. So as much as it may be a Rock, we are a Sea, and we shall relentlessly blast it wave after wave until its undone and Scotland is restored 🏴󠁧󠁢󠁳󠁣󠁴󠁿</h2>
+            <p>Valence</p>
+			<p><input name="vscore" type="radio" value="v0" /> 1
+               <input name="vscore" type="radio" value="v1" /> 2
+               <input name="vscore" type="radio" value="v2" /> 3
+               <input name="vscore" type="radio" value="v3" /> 4
+               <input name="vscore" type="radio" value="v4" /> 5</p>
+			<p>Arousal</p>
+			<p><input name="ascore" type="radio" value="a0" /> 1
+               <input name="ascore" type="radio" value="a1" /> 2
+               <input name="ascore" type="radio" value="a2" /> 3
+               <input name="ascore" type="radio" value="a3" /> 4
+               <input name="ascore" type="radio" value="a4" /> 5</p>
+            <p>Dominance</p>
+			<p><input name="dscore" type="radio" value="d0" /> 1
+               <input name="dscore" type="radio" value="d1" /> 2
+               <input name="dscore" type="radio" value="d2" /> 3
+               <input name="dscore" type="radio" value="d3" /> 4
+               <input name="dscore" type="radio" value="d4" /> 5</p>
+		</fieldset>
+		<br>
+		<input type="submit">
+	</form>
+	<script language='Javascript'>turkSetAssignmentID();</script>
+</body>
+</html>
